@@ -1,0 +1,64 @@
+body {
+  font-family: sans-serif;
+  background-color: #949EDA;
+}
+
+.container-fluid {
+  background-color: #1226A2;
+}
+
+.container-fluid h1 {
+  padding-top: 10px;
+  margin-left: 10px;
+  padding-bottom: 25px;
+  color: #fff;
+  font-weight: 24px;
+}
+
+.container-fluid li {
+  display: inline-block;
+  padding: 10px;
+}
+
+.convert-celsius {
+  margin-left: 20%;
+  margin-top: 30px;
+}
+
+.convert-speed {
+  margin-left: 20%;
+  margin-top: 30px;
+}
+
+.list-of-days {
+  color: #000;
+  margin: 10%;
+  width: 80%;
+  height: 10%;
+}
+
+.list-of-days li {
+  display: inline-block;
+  padding-left: 7%;
+  margin: 0 auto;
+  clear: both;
+}
+
+.allDays-container {
+  background-image: url('cloud.jpg');
+}
+
+.main-day {
+  height: auto;
+  text-align: center;
+}
+
+.main-day li {
+  display: inline-block;
+  border: 1px solid #06198D;
+  margin: 10px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px;
+}

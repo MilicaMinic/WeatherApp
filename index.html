@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Weather</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container-fluid">
+      <h1>Weather</h1>
+    </div>
+
+  <div class="convert-container">
+    <div class="convert-celsius">
+      <p>
+      <label>Celsius</label>
+      <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+      </p>
+      <p>Kelvin: <span id="outputKelvin"></span></p>
+    </div>
+
+    <div class="convert-speed">
+      <p>
+      <label>m/s</label>
+      <input id="inputMPS" type="number" placeholder="MPS" oninput="speedConverter(this.value)" onchange="speedConverter(this.value)">
+      </p>
+      <p>km/h: <span id="outputKPH"></span></p>
+    </div>
+  </div>
+
+  </header>
+
+  <div class="main-container">
+
+    <div class="list-of-days">
+      <ul id="days"></ul>
+    </div>
+
+  <div class="allDays-container">
+
+    <div class="main-day">
+      <ul id="showday"></ul>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+  <!-- jQuery, Tether, Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+  <script src="convert.js"></script>
+</body>
+</html>
